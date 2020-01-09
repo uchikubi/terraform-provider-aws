@@ -52,10 +52,11 @@ docscheck:
 lint:
 	@echo "==> Checking source code against linters..."
 	@golangci-lint run ./$(PKG_NAME)/...
-	@tfproviderlint \
+	@awsproviderlint \
 		-c 1 \
 		-AT001 \
 		-AT002 \
+		-AWSAT001 \
 		-S001 \
 		-S002 \
 		-S003 \
@@ -76,8 +77,8 @@ lint:
 		./$(PKG_NAME)
 
 tools:
+	GO111MODULE=on go install ./awsproviderlint
 	GO111MODULE=on go install github.com/bflad/tfproviderdocs
-	GO111MODULE=on go install github.com/bflad/tfproviderlint/cmd/tfproviderlint
 	GO111MODULE=on go install github.com/client9/misspell/cmd/misspell
 	GO111MODULE=on go install github.com/golangci/golangci-lint/cmd/golangci-lint
 
