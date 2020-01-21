@@ -29,8 +29,8 @@ github.com/apparentlymart/go-dump v0.0.0-20190214190832-042adf3cf4a0 h1:MzVXffFU
 github.com/apparentlymart/go-dump v0.0.0-20190214190832-042adf3cf4a0/go.mod h1:oL81AME2rN47vu18xqj1S1jPIPuN7afo62yKTNn3XMM=
 github.com/apparentlymart/go-textseg v1.0.0 h1:rRmlIsPEEhUTIKQb7T++Nz/A5Q6C9IuX2wFoYVvnCs0=
 github.com/apparentlymart/go-textseg v1.0.0/go.mod h1:z96Txxhf3xSFMPmb5X/1W05FF/Nj9VFpLOpjS5yuumk=
-github.com/apparentlymart/terraform-plugin-test v1.1.0 h1:/2DA0xnGGzJW81tAajFeyMzq2pCry84gxa7+tWKmSFE=
-github.com/apparentlymart/terraform-plugin-test v1.1.0/go.mod h1:hYbuAV3amDbqrFlZLG1smC/QK5ZG2e1Jpq9m+Ug2qvk=
+github.com/apparentlymart/terraform-plugin-test v1.1.1-0.20200121133140-fc0b992513be h1:kf5LaLiNHzu3Vmq7oNJu19Op59MC5+tuxF4HIO2ITAk=
+github.com/apparentlymart/terraform-plugin-test v1.1.1-0.20200121133140-fc0b992513be/go.mod h1:hYbuAV3amDbqrFlZLG1smC/QK5ZG2e1Jpq9m+Ug2qvk=
 github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6/go.mod h1:grANhF5doyWs3UAsr3K4I6qtAmlQcZDesFNEHPZAzj8=
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=
@@ -249,8 +249,8 @@ github.com/hashicorp/terraform-json v0.3.1 h1:vRiOLck4YX4UqzljVhdQKsVLixX4L+Pgnm
 github.com/hashicorp/terraform-json v0.3.1/go.mod h1:MdwQStcJb00ht55L/2YH0ypAO9RNtczJ1MaUlf+gJcg=
 github.com/hashicorp/terraform-plugin-sdk v1.3.0 h1:leoaxwa8dUs7v11SX4xe33AZOwcb8dX5S+VXUjWPndM=
 github.com/hashicorp/terraform-plugin-sdk v1.3.0/go.mod h1:fY7uWsWuLHi/hsGmBC2Sm7lic5RlFFjcM4zwua5VDuk=
-github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200113151231-51aaecd6b174 h1:Ow53W4mdD+WQiGORnzCa6vVnaHDUeaqmrxwaQjtznB0=
-github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200113151231-51aaecd6b174/go.mod h1:oBBFHZErjD1If+8RhmfxAk6iAWOUzV14UkoCntSiuqA=
+github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200121133603-a1e117e43af5 h1:bJx2hlS+qX0DJkLkIGShfUPpA1147YWclyOtlv4UVYQ=
+github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200121133603-a1e117e43af5/go.mod h1:uCyNOBgo3hN3sS+DxPHnswE0RCeWNGfFXyZLAzBfQJQ=
 github.com/hashicorp/terraform-svchost v0.0.0-20191011084731-65d371908596 h1:hjyO2JsNZUKT1ym+FAdlBEkGPevazYsmVgIMw7dVELg=
 github.com/hashicorp/terraform-svchost v0.0.0-20191011084731-65d371908596/go.mod h1:kNDNcF7sN4DocDLBkQYz73HGKwN1ANB1blq4lIYLYvg=
 github.com/hashicorp/vault v0.10.4 h1:4x0lHxui/ZRp/B3E0Auv1QNBJpzETqHR2kQD3mHSBJU=

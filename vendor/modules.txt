@@ -19,7 +19,7 @@ github.com/agl/ed25519/edwards25519
 github.com/apparentlymart/go-cidr/cidr
 # github.com/apparentlymart/go-textseg v1.0.0
 github.com/apparentlymart/go-textseg/textseg
-# github.com/apparentlymart/terraform-plugin-test v1.1.0
+# github.com/apparentlymart/terraform-plugin-test v1.1.1-0.20200121133140-fc0b992513be
 github.com/apparentlymart/terraform-plugin-test
 # github.com/armon/go-radix v1.0.0
 github.com/armon/go-radix
@@ -427,7 +427,7 @@ github.com/hashicorp/logutils
 github.com/hashicorp/terraform-config-inspect/tfconfig
 # github.com/hashicorp/terraform-json v0.3.1
 github.com/hashicorp/terraform-json
-# github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200113151231-51aaecd6b174
+# github.com/hashicorp/terraform-plugin-sdk v1.4.2-0.20200121133603-a1e117e43af5
 github.com/hashicorp/terraform-plugin-sdk/acctest
 github.com/hashicorp/terraform-plugin-sdk/helper/acctest
 github.com/hashicorp/terraform-plugin-sdk/helper/customdiff
