@@ -1050,14 +1050,27 @@ func resourceAwsRDSClusterRead(d *schema.ResourceData, meta interface{}) error {
 		return fmt.Errorf("error setting tags: %s", err)
 	}
 
-	// Fetch and save Global Cluster if engine mode global
+	// Fetch and save Global Cluster if engine mode global and engine aurora(MySQL5.6)
 	d.Set("global_cluster_identifier", "")
 
-	if aws.StringValue(dbc.EngineMode) == "global" {
+	if aws.StringValue(dbc.EngineMode) == "global" && aws.StringValue(dbc.Engine) == "aurora" {
 		globalCluster, err := rdsDescribeGlobalClusterFromDbClusterARN(conn, aws.StringValue(dbc.DBClusterArn))
 
 		if err != nil {
 			return fmt.Errorf("error reading RDS Global Cluster information for DB Cluster (%s): %s", d.Id(), err)
+		}
+
+		if globalCluster != nil {
+			d.Set("global_cluster_identifier", globalCluster.GlobalClusterIdentifier)
+		}
+	}
+
+	// Fetch and save Global Cluster if engine is aurora-mysql.
+	// If engine is "aurora-mysql", engine-mode will be "provisioned" instead of "golobal".
+	if aws.StringValue(dbc.EngineMode) == "provisioned" && aws.StringValue(dbc.Engine) == "aurora-mysql" {
+		globalCluster, err := rdsDescribeGlobalClusterFromDbClusterARN(conn, aws.StringValue(dbc.DBClusterArn))
+
+		if err != nil {
 		}
 
 		if globalCluster != nil {
